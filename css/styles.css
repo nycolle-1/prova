@@ -1,0 +1,256 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+/*variavais*/
+:root {
+    --corVermelho: #4f0b0c;
+    --corDois: #1b0046;
+    --corBranca: #FFF;
+    --corFundo: #aaa;
+
+}
+
+body {
+    background-color: var(--corFundo);
+}
+
+.interface {
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+/* cabeçalho */
+
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+
+}
+
+header>.interface {
+    display: flex;
+    /* fica um lado do outro elemento*/
+    align-items: center;
+    justify-content: space-between;
+    /* logo fica de um lado e elementos da outroS*/
+
+}
+
+header .logo-cabecalho img {
+    max-width: 100px;
+}
+
+header nav.menu-desktop ul {
+    display: flex;
+    /* fica um lado do outro elemento*/
+    align-items: center;
+    list-style: none;
+    /* tira a bolinha*/
+    gap: 56px;
+    /*separa a distancia dos links*/
+}
+
+header nav.menu-desktop a {
+    color: var(--corBranca);
+    text-decoration: none;
+    /*tira o supliahdo*/
+    transition: .5s;
+    /*da um delei quando muda de cor*/
+}
+
+/*quando pasa o mause por cima do link*/
+header nav.menu-desktop a:hover {
+    color: var(--corDois);
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/*hero  */
+
+
+section.teste {
+    background-image: linear-gradient(to left, var(--corVermelho) 70%, var(--corDois) 30%);
+    padding-top: 100px;
+}
+
+.teste>.interface {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.teste .txt-hero h1 {
+    font-size: 3rem;
+    color: var(--corBranca);
+}
+
+.teste .txt-hero h1 span {
+    color: var(--corDois);
+    display: block;
+}
+
+.teste .txt-hero p {
+    color: var(--corBranca);
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* sobre mim */
+
+section.sobre-mim {
+    padding: 80px 0;
+}
+
+.sobre-mim>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 95px;
+}
+
+.sobre-mim p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* serviços*/
+
+section.servicos {
+    padding: 50px 0;
+    background-color: var(--corDois);
+}
+
+.servicos article {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.servicos article p {
+    color: #FFF;
+    text-align: justify;
+}
+
+.servicos article h2 {
+    color: #FFF;
+}
+
+.servicos .box-skils {
+    padding: 24px;
+    background-color: #0a0119;
+    border-radius: 16px;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* serviços*/
+
+section.portifolio {
+    padding: 50px 0;
+    background-color: var(--corDois);
+}
+
+.portifolio article {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.portifolio article p {
+    color: #FFF;
+    text-align: justify;
+}
+
+.portifolio article h2 {
+    color: #FFF;
+}
+
+.portifolio .box-skils {
+    padding: 24px;
+    background-color: #0a0119;
+    border-radius: 16px;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* serviços*/
+
+section.contatos {
+    padding: 80px 0;
+    background-color: var(--corVermelho);
+}
+
+.contatos>.interface {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contatos .txt-contato p {
+    color: var(--corBranca);
+    font-size: 2rem;
+}
+
+.contatos form {
+    width: 50%;
+}
+
+.contatos form input {
+    width: 100%;
+    padding: 16px 10px;
+    background: transparent;
+    border: 2px solid var(--corDois);
+    outline: none;
+    color: var(--corBranca);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+
+.contatos form .tel-proj {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.contatos form .btn-enviar input {
+    border-color: var(--corDois);
+
+}
+
+.contatos form .btn-enviar input :hover {
+    border-color: var(--corVermelho);
+    color: var(--corBranca);
+
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* rodape*/
+
+footer {
+    padding: 40px 0;
+}
+
+footer>.interface {
+    display: flex;
+    justify-content: center;
+    background-color: #0a0119;
+
+    text-align: center;
+}

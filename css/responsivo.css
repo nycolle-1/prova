@@ -1,0 +1,111 @@
+@media (max-width:1000px) {
+
+    header {
+        background-image: none;
+        background-color: var(--corVermelho);
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+
+    /*hero  */
+
+    section.teste {
+        background-image: linear-gradient(to top, var(--corDois) 90%, var(--corDois) 10%);
+
+    }
+
+    .teste>.interface {
+        text-align: center;
+        gap: 64px;
+
+        flex-direction: column-reverse;
+    }
+
+    .teste .txt-hero h1 {
+        font-size: 2rem;
+
+    }
+
+    /* sobre mim */
+
+
+
+    .sobre-mim>.interface {
+
+
+        flex-direction: column;
+    }
+
+    /* serviços*/
+
+
+
+    .servicos article {
+
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+
+    }
+
+
+
+
+
+
+    /* ------------------------------------------------------------------------------------------------------- */
+
+    /* serviços*/
+
+
+
+    .portifolio article {
+
+        grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
+
+    }
+
+
+    /* serviços*/
+
+
+    .contatos>.interface {
+
+
+        flex-direction: column;
+
+    }
+
+
+
+    .contatos form {
+        width: 100%;
+    }
+
+
+
+    .contatos form .tel-proj {
+        display: block;
+
+
+    }
+
+
+    /* rodape*/
+
+
+    footer>.interface {
+        display: flex;
+        justify-content: center;
+        background-color: #0a0119;
+
+        flex-direction: column-reverse;
+    }
+
+
+
+
+
+
+}
